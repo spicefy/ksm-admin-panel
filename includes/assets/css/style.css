@@ -1,0 +1,109 @@
+body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f8f9fa;
+            transition: margin-left 0.3s ease;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 250px;
+            left: 0;
+            top: 0;
+            transition: transform 0.3s ease, background 0.3s ease;
+            transform: translateX(0);
+            z-index: 1050;
+        }
+        .sidebar.hide {
+            transform: translateX(-250px);
+        }
+        .sidebar a {
+            color: #adb5bd;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .sidebar a:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .sidebar .active {
+            background-color: #495057;
+            color: #fff;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s ease;
+        }
+        .content.full {
+            margin-left: 0;
+        }
+        .toggle-btn {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1100;
+            color: #495057;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-250px);
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        .dark-theme {
+            background-color: #1e1e2d;
+            color: #e4e4e7;
+        }
+        .dark-theme .sidebar {
+            background-color: #27293d;
+        }
+        .dark-theme .card {
+            background-color: #2d2f40;
+            color: #e4e4e7;
+        }
+      
+      
+      
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    margin-left: 20px; /* Optional: Indent the submenu items */
+}
+
+/* Show submenu when hovering over the parent menu item */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Optional: Style for active submenu links */
+.submenu a:hover {
+    background-color: #f1f1f1; /* Background change on hover */
+    color: #007bff; /* Text color change on hover */
+}

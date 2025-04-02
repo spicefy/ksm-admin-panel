@@ -1,0 +1,43 @@
+<?php
+$menuItems = [
+    'admin' => [
+        ['url' => 'Users.php', 'label' => 'Users', 'icon' => 'fa-users'],
+        ['url' => 'Analytics.php', 'label' => 'Analytics', 'icon' => 'fa-chart-line'],
+        ['url' => 'manage_quizzes.php', 'label' => 'Manage Quizzes', 'icon' => 'fa-pen'],
+        ['url' => 'manage_users.php', 'label' => 'Manage Users', 'icon' => 'fa-users-cog'],
+        ['url' => 'subscriptions.php', 'label' => 'Subscriptions', 'icon' => 'fa-file-invoice-dollar'],
+        ['url' => 'somapay.php', 'label' => 'Somapay', 'icon' => 'fa-money-bill-wave'],
+        ['url' => 'study_notes.php', 'label' => 'Manage Study Notes', 'icon' => 'fa-book'],
+        ['url' => 'past_papers.php', 'label' => 'Manage Past Papers', 'icon' => 'fa-file-alt'],
+        ['url' => 'manage_exams.php', 'label' => 'Manage Exams', 'icon' => 'fa-clipboard-list'],
+        ['url' => 'create_games.php', 'label' => 'Create Games', 'icon' => 'fa-gamepad'],
+        ['url' => 'Settings.php', 'label' => 'Settings', 'icon' => 'fa-cog'],
+        ['url' => '../../../logout.php', 'label' => 'Logout', 'icon' => 'fa-sign-out-alt'],
+    ],
+    'student' => [
+        ['url' => 'Dashboard.php', 'label' => 'Dashboard', 'icon' => 'fa-tachometer-alt'],
+        ['url' => 'Subjects.php', 'label' => 'My Subjects', 'icon' => 'fa-book-open'],
+        ['url' => 'Quizzes.php', 'label' => 'Quizzes', 'icon' => 'fa-pen'],
+        ['url' => 'Assignments.php', 'label' => 'Assignments', 'icon' => 'fa-tasks'],
+        ['url' => 'Classes.php', 'label' => 'Classes', 'icon' => 'fa-chalkboard'],
+        ['url' => 'SetBooks.php', 'label' => 'Set Books', 'icon' => 'fa-book-reader'],
+        ['url' => 'Examinations.php', 'label' => 'Examinations', 'icon' => 'fa-edit'],
+        ['url' => 'Games.php', 'label' => 'Games', 'icon' => 'fa-gamepad'],
+        ['url' => 'Chat.php', 'label' => 'Chat', 'icon' => 'fa-comments'],
+        ['url' => 'Ranking.php', 'label' => 'Ranking', 'icon' => 'fa-trophy'],
+        ['url' => 'Settings.php', 'label' => 'Settings', 'icon' => 'fa-cog'],
+        ['url' => '../../../logout.php', 'label' => 'Logout', 'icon' => 'fa-sign-out-alt'],
+    ],
+    'teacher' => [
+        ['url' => 'manage_classes.php', 'label' => 'Manage Classes', 'icon' => 'fa-chalkboard-teacher'],
+        ['url' => 'admit_student.php', 'label' => 'Admit Student', 'icon' => 'fa-user-plus'],
+        ['url' => 'give_assignment.php', 'label' => 'Give Assignment', 'icon' => 'fa-clipboard'],
+        ['url' => '../../../logout.php', 'label' => 'Logout', 'icon' => 'fa-sign-out-alt'],
+    ],
+    'parent' => [
+        ['url' => 'student_progress.php', 'label' => 'Student Progress', 'icon' => 'fa-chart-line'],
+        ['url' => 'reports.php', 'label' => 'Reports', 'icon' => 'fa-file-alt'],
+        ['url' => 'homework.php', 'label' => 'Home Work', 'icon' => 'fa-pencil-alt'],
+        ['url' => '../../../logout.php', 'label' => 'Logout', 'icon' => 'fa-sign-out-alt'],
+    ],
+];
